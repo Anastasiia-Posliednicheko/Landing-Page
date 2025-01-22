@@ -14,6 +14,15 @@ ul {
 .body{
     font-family: "Inter", sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
 
 
 button {
@@ -21,17 +30,19 @@ button {
 }
 
 .container{
-    min-width: 320px;
+    max-width: 320px;
     padding: 80px 16px;
-    background-color: #043873;
-}
+    margin: 0 auto;
+    }
+    
 
 /* hero section*/
-
-.hero-heading{
+.hero-section{
     background-color: #043873;
+
 }
 .hero-title{
+    margin-bottom: 24px;
     font-weight: 700;
         font-size: 36px;
         text-align: center;
@@ -51,7 +62,7 @@ button {
 
 .hero-btn{
     display: block;
-    margin: 0 auto;
+    margin: auto;
     border-radius: 8px;
     padding: 20px 40px;
     width: 232px;
@@ -68,7 +79,8 @@ button {
 }
 
 .hero-image-container{
-    margin: 0 auto;
+    display: block;
+    margin: auto;
     width: 286px;
     height: 191px;
     background: #c4defd;
@@ -78,7 +90,11 @@ button {
 
 @media screen and (min-width: 768px){
     .container{
-        min-width: 768px;
+        max-width: 728px;
+        padding: 140px 20px 100px 20px;
+    }
+    .hero-heading{
+       
     }
     .hero-title{
         font-size: 54px;
@@ -90,4 +106,42 @@ button {
     }
 
 
+}
+
+@media screen and (min-width: 1152px){
+    .container{
+        max-width: 1152px;
+        padding: 140px 32px;
+    }
+    .hero-box {
+            display: flex;
+        }
+    .hero-btn{
+        width: 219px;
+            height: 63px;
+            margin: auto 0;
+            font-weight: 500;
+            line-height: 1.27778;
+
+    }
+    .hero-heading{
+        display: flex;
+        flex-direction: column;
+        width: 561px;
+        
+
+    }
+    
+    .hero-title{
+        font-size: 64px;
+        text-align: left;
+    }
+    .hero-text{
+        text-align: left;
+    }
+    .hero-image-container {
+            width: 526px;
+            height: 350px;
+    
+        }
 }
