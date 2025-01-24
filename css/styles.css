@@ -28,15 +28,32 @@ p {
 button {
     cursor: pointer;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .container{
     max-width: 320px;
     padding: 80px 16px;
     margin: 0 auto;
     }
-    
+@media screen and (min-width: 768px){
+    .container{
+        min-width: 768px;
+    }
+}
 
-/* hero section*/
+@media screen and (min-width: 1152px){
+    .container{
+        min-width: 1152px;
+    }
+}
+    
+    
+/*  hero section  */
+
 .hero-section{
     background-color: #043873;
 
@@ -90,11 +107,7 @@ button {
 
 @media screen and (min-width: 768px){
     .container{
-        max-width: 728px;
         padding: 140px 20px 100px 20px;
-    }
-    .hero-heading{
-       
     }
     .hero-title{
         font-size: 54px;
@@ -110,7 +123,6 @@ button {
 
 @media screen and (min-width: 1152px){
     .container{
-        max-width: 1152px;
         padding: 140px 32px;
     }
     .hero-box {
@@ -145,3 +157,105 @@ button {
     
         }
 }
+
+
+/*  management */
+.management{
+    background-color: #fff;
+}
+
+.management-title{
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #212529;
+}
+.management-text{
+    margin-bottom: 60px;
+    font-weight: 400;
+        font-size: 18px;
+        line-height: 1.66667;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #212529;
+}
+.management-btn{
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    padding: 20px 40px;
+    width: 200px;
+    height: 70px;
+    margin-bottom: 60px;
+
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66667;
+    letter-spacing: -0.02em;
+    color: #fff;
+
+    border-color: #fff;
+    background-color: #4f9cf9;
+}
+
+.management-image-container{
+    width: 286px;
+    height: 177px;
+    margin-bottom: 100px;
+
+    background: #c4defd;
+}
+
+.management-btn-second{
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    padding: 20px 40px;
+    width: 185px;
+    height: 70px;
+    margin-bottom: 60px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66667;
+    letter-spacing: -0.02em;
+    color: #fff;
+
+    border-color: #fff;
+    background: #4f9cf9;
+ }
+
+ @media screen and (min-width: 768px) {
+    .container{
+        padding: 100px 20px;
+    }
+    .management-title{
+        font-size: 54px;
+
+    }
+    .management-btn{
+        width: 190px;
+        height: 59px;
+    }
+    .management-image-container{
+        width: 561px;
+        height: 349px;
+    }
+    .management-btn{
+        width: 190px;
+        height: 59px;
+        
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .management-btn-second{
+        width: 177px;
+        height: 59px;
+
+        font-weight: 500;
+        font-size: 16px;
+    }
+ }
