@@ -26,8 +26,15 @@ p {
 
 
 button {
-    cursor: pointer;
-}
+    cursor: pointer;}
+    
+@media screen and (min-width: 1152px){
+    button{
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+    }
+
 img {
     display: block;
     max-width: 100%;
@@ -42,16 +49,102 @@ img {
 @media screen and (min-width: 768px){
     .container{
         min-width: 768px;
+        padding: 100px 20px;
+        }
     }
-}
+
 
 @media screen and (min-width: 1152px){
     .container{
         min-width: 1152px;
+        padding: 140px 32px;
+    }
+    .box {
+        display: flex;
     }
 }
     
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #043873;
+    color: white;
+}
+.logo{
+    font-weight: 700;
+        font-size: 19px;
+        color: #fff;
+}
+.menu-btn{
+    display: block;
+    width: 42px;
+    height: 24px;
+    border: 2px solid #fff;
+    fill: #043873;;
+}
+.login-btn{
+    display: none;
+    border-radius: 8px;
+    padding: 16px 40px;
+    width: 126px;
+    height: 60px;
+
+    background-color: #ffe492;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.27778;
+    letter-spacing: -0.02em;
+    color: #043873;}
     
+.free-btn{
+    display: none;
+    border-radius: 8px;
+    padding: 16px 24px;
+    width: 227px;
+    height: 60px;
+
+    background-color: #4f9cf9;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.27778;
+    letter-spacing: -0.02em;
+    color: #fff;
+    
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 16px 32px;
+    }
+    .logo{
+        font-size: 28px;
+    }
+    .menu-btn{
+        height: 34px;
+    }
+}
+
+@media screen and (min-width: 1152px){
+    .header-btn{
+        display: flex;
+        gap: 20px;
+    }
+    .login-btn{
+        display: block;
+    }
+    .free-btn{
+        display: block;
+    }
+    .menu-btn{
+        display: none;
+
+    }
+}
 /*  hero section  */
 
 .hero-section{
@@ -106,9 +199,6 @@ img {
 
 
 @media screen and (min-width: 768px){
-    .container{
-        padding: 140px 20px 100px 20px;
-    }
     .hero-title{
         font-size: 54px;
     }
@@ -122,12 +212,8 @@ img {
 }
 
 @media screen and (min-width: 1152px){
-    .container{
-        padding: 140px 32px;
-    }
-    .hero-box {
-            display: flex;
-        }
+    
+    
     .hero-btn{
         width: 219px;
             height: 63px;
@@ -208,7 +294,24 @@ img {
 
     background: #c4defd;
 }
+.management-title-second{
+    margin-bottom: 24px;
+    font-weight: 700;
+        font-size: 36px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #212529;
+}
+.management-text-second {
+    margin-bottom: 60px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.66667;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #212529;
 
+}
 .management-btn-second{
     display: block;
     margin: auto;
@@ -229,12 +332,8 @@ img {
  }
 
  @media screen and (min-width: 768px) {
-    .container{
-        padding: 100px 20px;
-    }
     .management-title{
         font-size: 54px;
-
     }
     .management-btn{
         width: 190px;
@@ -243,6 +342,7 @@ img {
     .management-image-container{
         width: 561px;
         height: 349px;
+        margin: auto;
     }
     .management-btn{
         width: 190px;
@@ -251,11 +351,67 @@ img {
         font-weight: 500;
         font-size: 16px;
     }
+    .management-title-second{
+        margin-top: 100px;
+        margin-bottom: 24px;
+        font-size: 54px;
+    }
     .management-btn-second{
         width: 177px;
         height: 59px;
 
         font-weight: 500;
         font-size: 16px;
+    } 
+    .management-image{
+        margin: auto;
     }
- }
+   }
+
+   @media screen and (min-width: 1152px){
+    .management-title {
+            font-size: 64px;
+            text-align: left;
+        }
+    .management-text{
+        text-align: left;
+    }
+    
+    .management-btn {
+        border-radius: 6px;
+        width: 201px;
+        height: 63px;
+        margin: 0 ;
+        
+    }
+    .management-image-container {
+         width: 527px;
+         height: 328px;
+        }
+    .management-headline{
+        display: flex;
+        flex-direction: column;
+        width: 528px;
+    }
+    .management-work{
+        display: flex;
+        flex-direction: column;
+        width: 527px;
+    }
+    .management-title-second {
+        font-size: 64px;
+        text-align: left;
+    }
+    .management-text-second {
+        text-align: left;
+    }
+    .management-btn-second{
+        border-radius: 6px;
+        width: 186px;
+        height: 63px;
+        margin: 0;
+    }
+    .box.management{
+        margin-top: 100px;
+    }
+     }

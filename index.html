@@ -17,11 +17,18 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="logo">whitespace</div>
+      <div class="header-btn">
+        <button type="button" class="login-btn">Login</button>
+        <button type="button" class="free-btn">Try Whitepace free</button>
+        <button type="button" class="menu-btn">&#9776;</button>
+      </div>
+    </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <div class="hero-box">
+          <div class="box">
             <div class="hero-heading">
               <h1 class="hero-title">Get More Done with whitepace</h1>
               <p class="hero-text">
@@ -36,30 +43,39 @@
       </section>
       <section class="management">
         <div class="container">
-          <h2 class="management-title">Project Management</h2>
-          <p class="management-text">
-            Images, videos, PDFs and audio files are supported. Create math
-            expressions and diagrams directly from the app. Take photos with the
-            mobile app and save them to a note.
-          </p>
-          <button class="management-btn" type="button">Get Started</button>
+          <div class="box">
+            <div class="management-headline">
+              <h2 class="management-title">Project Management</h2>
+              <p class="management-text">
+                Images, videos, PDFs and audio files are supported. Create math
+                expressions and diagrams directly from the app. Take photos with
+                the mobile app and save them to a note.
+              </p>
+              <button class="management-btn" type="button">Get Started</button>
+            </div>
+            <div class="management-image-container"></div>
+          </div>
 
-          <div class="management-image-container"></div>
-          <h2 class="management-title">Work together</h2>
-          <p class="management-text">
-            With whitepace, share your notes with your colleagues and
-            collaborate on them. You can also publish a note to the internet and
-            share the URL with others.
-          </p>
-          <button class="management-btn-second" type="button">
-            Try it now
-          </button>
-          <img
-            src="./images/Work Together Image.jpg"
-            alt="Work together"
-            width="278"
-            height="259"
-          />
+          <div class="box management">
+            <div class="management-work">
+              <h2 class="management-title-second">Work together</h2>
+              <p class="management-text-second">
+                With whitepace, share your notes with your colleagues and
+                collaborate on them. You can also publish a note to the internet
+                and share the URL with others.
+              </p>
+              <button class="management-btn-second" type="button">
+                Try it now
+              </button>
+            </div>
+            <img
+              class="management-image"
+              src="./images/Work Together Image.jpg"
+              alt="Work together"
+              width="278"
+              height="259"
+            />
+          </div>
         </div>
       </section>
       <section>
