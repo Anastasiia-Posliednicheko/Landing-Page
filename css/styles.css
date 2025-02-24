@@ -853,6 +853,9 @@ img {
     color: #fff;
  }
  @media screen and (min-width: 768px) {
+    .work-heading {
+        width: 604px;
+    }
     .data-img {
         width: 513px;
         height: 287px;
@@ -914,12 +917,97 @@ img {
         font-size: 54px;
     }
 }
- @media screen and (min-width: 1152px) {
+@media screen and (min-width: 1152px) {
     .sponsors-title {
         font-size: 64px;
     }
     .sponsors-list {
         flex-direction: row;
         justify-content: center;
+    }
+ }
+
+
+ /* apps */
+.apps {
+    
+}
+ .apps-img {
+    width: 286px;
+    height: 231px;
+    margin-bottom: 100px;
+ }
+ .apps-title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #212529;
+ }
+ .apps-text {
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66667;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #212529;
+ }
+ .apps-btn {
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    padding: 20px 40px;
+    width: 193px;
+    height: 70px;
+
+    background-color: #4f9cf9;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66667;
+    letter-spacing: -0.02em;
+    color: #fff;
+ }
+ @media screen and (min-width: 768px) {
+    .apps-img {
+        width: 485px;
+        height: 392px;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    .apps-title {
+        font-size: 54px;
+    }
+    .apps-btn {
+        width: 205px;
+        height: 63px;
+        border-radius: 6px;
+
+        font-weight: 500;
+        line-height: 1.27778;
+    }
+ }
+ @media screen and (min-width: 1152px) {
+    .apps-img {
+        width: 528px;
+        height: 427px;
+    }
+    .apps-heading{
+        display: flex;
+        flex-direction: column;
+        width: 460px;
+    }
+    .apps-title {
+        font-size: 64px;
+        text-align: left;
+    }
+    .apps-text {
+        text-align: left;
+    }
+    .apps-btn {
+        margin: auto 0;
+        width: 194px;
+        height: 63px;
     }
  }
