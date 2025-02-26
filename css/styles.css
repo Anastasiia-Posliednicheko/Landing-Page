@@ -715,7 +715,7 @@ img {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     padding-bottom: 10px;
-    -webkit-overflow-scrolling: touch; /* IOS */
+    
 }
 .choose-box,
 .choose-list {
@@ -753,6 +753,10 @@ img {
       display: flex;
       overflow-x: visible;
     }
+    .choose-box,
+    .choose-list {
+            flex: 0 0 auto;
+        }
     .choose-box {
         display: block;
         border: 1px solid #ffe492;
