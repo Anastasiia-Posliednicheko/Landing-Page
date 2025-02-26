@@ -4,6 +4,8 @@ html {
 
 .hidden {
     display: none;
+    visibility: hidden;
+    opacity: 0;
 }
 
 ul {
@@ -24,9 +26,9 @@ p {
     margin: 0;
 }
 
-
 button {
-    cursor: pointer;}
+    cursor: pointer;
+}
     
 @media screen and (min-width: 1152px){
     button{
@@ -50,7 +52,7 @@ img {
     }
 @media screen and (min-width: 768px){
     .container{
-        min-width: 768px;
+        max-width: 768px;
         padding: 100px 20px;
         }
     }
@@ -58,7 +60,7 @@ img {
 
 @media screen and (min-width: 1152px){
     .container{
-        min-width: 1152px;
+        max-width: 1152px;
         padding: 140px 32px;
     }
     .box {
@@ -592,9 +594,6 @@ img {
 
  }
  /* Choose */
- .choose-box {
-    display: none;
- }
  .choose {
     background-color: #fff;
  }
@@ -671,6 +670,7 @@ img {
     padding: 16px 40px;
     width: 176px;
     height: 62px;
+    margin-top: 25px;
     
 
     background-color: #4f9cf9;
@@ -709,6 +709,20 @@ img {
         letter-spacing: -0.02em;
         color: #212529;
 }
+.choose-box-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch; /* IOS */
+}
+.choose-box,
+.choose-list {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    display: block;
+}
 
 @media screen and (min-width: 768px) {
     .choose-title {
@@ -725,12 +739,19 @@ img {
         font-weight: 500;
         font-size: 16px;
     }
-    
+        .choose-box,
+        .choose-list {
+            flex: 0 0 60%;
+            scroll-snap-align: center;
+            display: block;
+        }
+
 }
 
 @media screen and (min-width: 1152px) {
     .choose-box-list{
       display: flex;
+      overflow-x: visible;
     }
     .choose-box {
         display: block;
