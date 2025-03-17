@@ -82,8 +82,8 @@ svg {
 }
 .logo{
     font-weight: 700;
-        font-size: 19px;
-        color: #fff;
+    font-size: 19px;
+    color: #fff;
 }
 .menu-btn{
     display: block;
@@ -1222,4 +1222,29 @@ svg {
     .trial-text {
         text-align: center;
     }
+}
+
+/* footer */
+.footer {
+    background-color: #043873;
+}
+.footer-logo {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    color: #fff;
+}
+.footer-text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66667;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #f7f7ee;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
