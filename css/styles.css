@@ -1235,7 +1235,7 @@ svg {
     color: #fff;
 }
 .footer-text {
-    text-align: center;
+    margin-top: 24px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.66667;
@@ -1246,5 +1246,145 @@ svg {
 .footer-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 15px;
+    margin: 80px 0;
+}
+.footer-list-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66667;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+}
+.footer-list-text:hover {
+    font-weight: 700;
+    color: #fff;
+}
+.footer-list-text:active {
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffe492;
+}
+.footer-title {
+    margin-top: 23px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+}
+.footer-btn {
+    display: block;
+    border-radius: 8px;
+    padding: 20px 40px;
+    width: 196px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 23px;
+
+    background-color: #4f9cf9;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66667;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.footer-social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-social-icons a:hover {
+    color: #4e75ff;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-logo {
+        font-size: 51px;
+        text-align: left;
+    }
+    .footer-text {
+        text-align: left;
+    }
+    .footer-list {
+        align-items: flex-start;
+    }
+    .footer-box {
+        width: 201px;
+        height: 231px;
+    }
+    .footer-title {
+        text-align: left;
+    }
+    .footer-btn {
+        width: 187px;
+        height: 59px;
+        margin: 23px 0;
+
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .desktop {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .footer-social-icons {
+        justify-content: flex-start;
+    }
+}
+@media screen and (min-width: 1152px) {
+    .footer-logo {
+        font-size: 28px;
+    }
+    .footer-btn {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+    .footer-content-desktop {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 100px; 
+        width: 1088px;
+        height: 182px;
+    }
+    .footer-box-dekstop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-list,
+    .footer-title {
+        margin: 0 auto;
+    }
+    .footer-icons-dekstop {
+        display: flex;
+        margin-top: 100px;
+    }
+    .desktop {
+        gap: 60px;
+        margin-top: 100px;
+
+    }
+    .footer-list-text {
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+    .footer-text {
+        margin-top: 15px;
+        font-size: 16px;
+            line-height: 1.25;
+    }
+    
 }
